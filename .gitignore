@@ -3,3 +3,4 @@
 ./20Lab/*
 provider.tf
 *terraform*
+main.tfplan
