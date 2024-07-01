@@ -15,11 +15,20 @@ macの場合、homebrewですぐインストールできる
 
 ## 2.編集環境VS code整備
 ### 2.1 VS code ダウンロード
-Macの場合、方式DLページにてダウンロードできて、手順通りインストールできれば、OKです。
+#### 2.1.1Macの場合
+公式DLページアクセスし、macOSのインストーラーをダウンロードできて、手順通りインストールできれば、OKです。
 
 https://code.visualstudio.com/
 
-suoh端末の場合、zipをDLする必要あります。
+![image](https://github.com/chloechloe/terraform-learn/assets/8857472/3c89706e-19af-4a94-84df-dd2bdb3d5013)
+
+#### 2.1.2 Windowsの場合
+https://code.visualstudio.com/
+
+WindowsのインストーラーをDLし、手順通りインストール。
+![image](https://github.com/chloechloe/terraform-learn/assets/8857472/fa271f84-27c2-43f0-bf60-6c96dc29e73b)
+
+※：suoh端末の場合、zipをDLする必要あります。
 <img width="1363" alt="截屏2024-07-01 13 36 54" src="https://github.com/chloechloe/terraform-learn/assets/8857472/962b7a5a-a0a4-4001-9a0c-cc7d8c5146c8">
 
 その後、解凍すれば利用できます。
