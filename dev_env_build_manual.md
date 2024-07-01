@@ -64,5 +64,37 @@ https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs
 <img width="1377" alt="Screenshot 2024-07-01 at 15 41 09" src="https://github.com/chloechloe/terraform-learn/assets/8857472/d5665e1a-d596-450a-8f4e-158cf3ee6df0">
 <img width="704" alt="Screenshot 2024-07-01 at 15 43 30" src="https://github.com/chloechloe/terraform-learn/assets/8857472/96f11440-e96f-4854-9ba9-070e8f443605">
 
+```
+provider "azurerm" {
+  # Configuration options
+}
+```
+ブロックに必要なAzureテナント情報を入力します。
+subscription_idはAzureスクリプション情報になります。このように確認できます。
+![Screenshot 2024-07-01 at 15 52 39](https://github.com/chloechloe/terraform-learn/assets/8857472/3fb879a1-7505-408f-b376-cad39a1bb81c)
+tenant_id、client_idはこのように確認できます。
+Microsoft Entra ID > App registrations > All applications > terraform 
+
+![Screenshot 2024-07-01 at 15 56 19](https://github.com/chloechloe/terraform-learn/assets/8857472/8464df3f-2abf-4e23-b2c9-2af4f51da691)
+![Screenshot 2024-07-01 at 15 57 34](https://github.com/chloechloe/terraform-learn/assets/8857472/f8a3a971-683f-48f2-aba9-f932264b46fa)
+
+client_secretは3.1章でメモ帳に貼り付けたsecretになります。
+
+そうしたら、providerブロックはこのようになります。
+
+```
+provider "azurerm" {
+  # Configuration options
+  subscription_id = "ff3de05d-***"
+  tenant_id = "db12c563-***"
+  client_id = "38695bad-***"
+  client_secret = "17J8Q~***"
+  features {
+    
+  }
+
+}
+```
+
 
 
