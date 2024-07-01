@@ -96,5 +96,35 @@ provider "azurerm" {
 }
 ```
 
+## 4 terraform実行してみる (resource group作成の例）
+### 4.1 resource group定義を追加します。
+全体的に「main.tf」がこのようになります。
+```
+terraform {
+  required_providers {
+    azurerm = {
+      source = "hashicorp/azurerm"
+      version = "3.110.0"
+    }
+  }
+}
+
+provider "azurerm" {
+  # Configuration options
+  subscription_id = "ff3de05d-***"
+  tenant_id = "db12c563-***"
+  client_id = "38695bad-***"
+  client_secret = "17J8Q~****"
+  features {
+    
+  }
+
+}
+
+resource "azurerm_resource_group" "testgrp" {
+  name     = "test-grp"
+  location = "Japan East"
+}
+```
 
 
