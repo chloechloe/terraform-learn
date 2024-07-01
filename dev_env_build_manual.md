@@ -58,4 +58,11 @@ terraform詳細画面左側　Manage > Certificate & Secretをクリック
 VS Codeに新規ファイル、「main.tf」を作成する
 terraform Azure provider公式ページにアクセスする
 https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs
+
 「Use　Provider」をクリック、コードブロックをコピーし、VSCodeの「main.tf」に貼り付けます。
+
+<img width="1377" alt="Screenshot 2024-07-01 at 15 41 09" src="https://github.com/chloechloe/terraform-learn/assets/8857472/d5665e1a-d596-450a-8f4e-158cf3ee6df0">
+<img width="704" alt="Screenshot 2024-07-01 at 15 43 30" src="https://github.com/chloechloe/terraform-learn/assets/8857472/96f11440-e96f-4854-9ba9-070e8f443605">
+
+
+
