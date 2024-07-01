@@ -127,4 +127,29 @@ resource "azurerm_resource_group" "testgrp" {
 }
 ```
 
+### 4.2 VS Codeでterminalを開く
+<img width="855" alt="Screenshot 2024-07-01 at 16 05 18" src="https://github.com/chloechloe/terraform-learn/assets/8857472/d8f944e6-fde7-4238-85d9-f5039e9fb696">
+
+<img width="1418" alt="Screenshot 2024-07-01 at 16 05 58" src="https://github.com/chloechloe/terraform-learn/assets/8857472/d55b1551-ce1b-4f07-9485-3804c78930b0">
+
+### 4.3 terraformを実行する
+`terraform init`
+<img width="1097" alt="Screenshot 2024-07-01 at 16 07 09" src="https://github.com/chloechloe/terraform-learn/assets/8857472/df4fe64c-35f0-4e94-82f7-21d847aa42fd">
+<img width="1084" alt="Screenshot 2024-07-01 at 16 07 31" src="https://github.com/chloechloe/terraform-learn/assets/8857472/f85c2420-0aaa-479e-b8b6-35d56bc443f9">
+
+`terraform plan`
+<img width="1083" alt="Screenshot 2024-07-01 at 16 08 27" src="https://github.com/chloechloe/terraform-learn/assets/8857472/84057d69-6ed7-4756-a333-4cb6e06ea93c">
+<img width="1093" alt="Screenshot 2024-07-01 at 16 08 46" src="https://github.com/chloechloe/terraform-learn/assets/8857472/95cacc11-4e73-4c9f-942b-41dcdaa1f3bd">
+
+`terraform apply`
+<img width="1088" alt="Screenshot 2024-07-01 at 16 09 37" src="https://github.com/chloechloe/terraform-learn/assets/8857472/4d95a4bb-fd9f-4c94-9852-b91973319e2c">
+実行するかしつもん出たら、「yes」を入力して、enterをおします。
+<img width="1094" alt="Screenshot 2024-07-01 at 16 10 08" src="https://github.com/chloechloe/terraform-learn/assets/8857472/bdfb312b-b560-4291-ab84-11863337b2e2">
+「apply completed!」みたいな情報出たら、デプロイ完成
+<img width="1091" alt="Screenshot 2024-07-01 at 16 11 23" src="https://github.com/chloechloe/terraform-learn/assets/8857472/54b5fec8-b8e9-45cc-935e-b05cb3aa03aa">
+
+Azure ポータル確認したら、test-grp作成されてます。
+![Screenshot 2024-07-01 at 16 12 44](https://github.com/chloechloe/terraform-learn/assets/8857472/0139263b-f97f-40ad-b7bb-601711b059f4)
+
+
 
