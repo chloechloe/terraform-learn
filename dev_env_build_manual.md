@@ -56,4 +56,6 @@ terraform詳細画面左側　Manage > Certificate & Secretをクリック
 
 ### 3.2 terraformにAzure Provider情報を記入する
 VS Codeに新規ファイル、「main.tf」を作成する
-
+terraform Azure provider公式ページにアクセスする
+https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs
+「Use　Provider」をクリック、コードブロックをコピーし、VSCodeの「main.tf」に貼り付けます。
