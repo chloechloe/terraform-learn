@@ -18,12 +18,23 @@ locals {
     address_space="10.39.36.36/27"
   }
 
+  expressRoute="erc-fic-kdmz-tokyo2"
+
 }
 
 resource "azurerm_resource_group" "admingrp" {
   name     = local.resource_group_name_admin
   location = local.location  
 }
+
+resource "azurerm_management_lock" "resource-group-level" {
+  name       = "resource-group-level"
+  scope      = azurerm_resource_group.admingrp.id
+  lock_level = "ReadOnly"
+  notes      = "This Resource Group is Read-Only"
+}
+
+
 resource "azurerm_resource_group" "usergrp" {
   name     = local.resource_group_name_user
   location = local.location  
@@ -52,7 +63,7 @@ resource "azurerm_virtual_network" "uservnet" {
   }
 
 
-  resource "azurerm_subnet" "adminsubnet" {
+resource "azurerm_subnet" "adminsubnet" {
   name                 = local.subnets[0].name
   resource_group_name  = local.resource_group_name_admin
   virtual_network_name = local.virtual_network.name
@@ -61,6 +72,39 @@ resource "azurerm_virtual_network" "uservnet" {
     azurerm_virtual_network.adminvnet
   ]
 }
+//expressroute
+resource "azurerm_express_route_circuit" "expressRoute1" {
+  name                  = local.expressRoute
+  resource_group_name   = local.resource_group_name_admin
+  location              = local.location
+  service_provider_name = "NTT Communications - Flexible InterConnect"
+  peering_location      = "Tokyo2"
+  bandwidth_in_mbps     = 50
+
+  sku {
+    tier   = "Standard"
+    family = "MeteredData"
+  }
+}
+/*
+resource "azurerm_express_route_circuit_peering" "expressroutepeering" {
+  peering_type                  = "AzurePrivatePeering"
+  express_route_circuit_name    = local.expressRoute
+  resource_group_name           = local.resource_group_name_admin
+  peer_asn                      = 100
+  primary_peer_address_prefix   = "123.0.0.0/30"
+  secondary_peer_address_prefix = "123.0.0.4/30"
+  ipv4_enabled                  = true
+  vlan_id                       = 300
+
+  ipv6 {
+    primary_peer_address_prefix   = "2002:db01::/126"
+    secondary_peer_address_prefix = "2003:db01::/126"
+    enabled                       = true
+  }
+}
+*/
+
 
 /*
 resource "azurerm_network_interface" "appinterface" {
