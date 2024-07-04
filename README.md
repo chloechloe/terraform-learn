@@ -18,5 +18,9 @@ https://qiita.com/moaikids/items/c85908c9ed5be1e12993
 
 terraform-learn/CCV_prebuilt_simulation on  main took 1m 38s 
 ➜ 
+
 ACR利用方法
 https://learn.microsoft.com/ja-jp/azure/container-instances/container-instances-github-action
+
+Web App for Containers vNet統合経由でプライベートエンドポイント先のACRからイメージPullする
+https://qiita.com/shingo_kawahara/items/903ab9261d0d87c1d0a2
