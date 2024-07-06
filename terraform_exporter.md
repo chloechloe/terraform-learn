@@ -1,4 +1,5 @@
 # Azure既存リソースをterraformエクスポート
+2024/07/06 初版
 ## 1.AZ Cli ローカルPCインストール
 https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-macos
 
