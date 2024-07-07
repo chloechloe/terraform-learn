@@ -61,13 +61,8 @@ docker push ccvacr01.azurecr.io/nginx-test:v3
 
 ## 3.Public IP閉じるとACRのregistries一覧見れない
 ![alt text](<截屏2024-07-06 23.18.37_副本.jpg>)
-![截屏2024-07-06 22 44 33](https://github.com/chloechloe/terraform-learn/assets/8857472/32adeaf6-e842-48ca-af69-8bddaa6048fc)
-
+![截屏2024-07-06 23 18 37_副本](https://github.com/chloechloe/terraform-learn/assets/8857472/6fba35f8-f3f6-476b-911f-7302e5fc24d4)
 イメージPUSH、PULLは正常通りできます。
 networking puclic ip有効化にしたら、しばらく（何分間）を待つと、イメージ一覧表示されるようになります。
-
-![alt text](image.png)
 ![截屏2024-07-06 23 23 11](https://github.com/chloechloe/terraform-learn/assets/8857472/3fff7c8e-0517-457b-b9a7-7aec34355bbd)
-
-![alt text](image-1.png)
 ![截屏2024-07-06 23 23 53](https://github.com/chloechloe/terraform-learn/assets/8857472/f8af3eab-95a1-4221-96fc-408eaba77cf9)
