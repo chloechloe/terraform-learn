@@ -35,6 +35,7 @@ az account set --subscription [Subscrption ID]
 ```sudo apt  install docker.io```
 
 #もしpemission denied /var/run/docker.sockエラー出る場合
+https://qiita.com/Nw3965/items/8e75da0012cb7a451cc2
 `sudo chmod 666 /var/run/docker.sock`
 
 #Login to the ACR using 
