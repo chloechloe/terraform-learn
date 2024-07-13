@@ -24,3 +24,6 @@ https://learn.microsoft.com/ja-jp/azure/container-instances/container-instances-
 
 Web App for Containers vNet統合経由でプライベートエンドポイント先のACRからイメージPullする
 https://qiita.com/shingo_kawahara/items/903ab9261d0d87c1d0a2
+
+# Azure database for mysql
+https://learn.microsoft.com/ja-jp/azure/mysql/flexible-server/tutorial-simple-php-mysql-app
